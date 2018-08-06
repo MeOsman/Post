@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CameraApp</string>
+    <string name="camBtnLable">Snap</string>
+    <string name="textLoc">Location Detected</string>
+    <string name="incidenttxt">Describe the incident</string>
+    <string name="highSpeed">High Speed</string>
+    <string name="dangerousOvertaking">Dangerous overtaking</string>
+    <string name="dangerousRoadCrossing">Dangerous road crossing</string>
+    <string name="unscientificRoad">Unscientific Road</string>
+    <string name="dnagerousTurn">Dangerous turn</string>
+    <string name="postBtn">Post</string>
+    <string name="pictureClicked">Picture Clicked</string>
+    <string name="uploaded">Successfully Uploaded</string>
+    <string name="doneBtn">Done</string>
+    <string name="toPost">Post</string>
+</resources>

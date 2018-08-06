@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post">
+
+
+    <EditText
+        android:id="@+id/locationId"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/textLoc"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/describeIncident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:text="@string/incidenttxt"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/hpId"
+        android:onClick="selectItem"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="156dp"
+        android:checked="false"
+        android:text="@string/highSpeed" />
+
+    <CheckBox
+        android:id="@+id/doId"
+        android:onClick="selectItem"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/hpId"
+        android:layout_marginTop="199dp"
+        android:text="@string/dangerousOvertaking" />
+
+    <CheckBox
+        android:id="@+id/drId"
+        android:onClick="selectItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hpId"
+        android:layout_centerVertical="true"
+        android:text="@string/dangerousRoadCrossing" />
+
+    <CheckBox
+        android:id="@+id/urId"
+        android:onClick="selectItem"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="197dp"
+        android:layout_marginEnd="51dp"
+        android:text="@string/unscientificRoad" />
+
+    <CheckBox
+        android:id="@+id/dtId"
+        android:onClick="selectItem"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/hpId"
+        android:layout_marginBottom="155dp"
+        android:text="@string/dnagerousTurn" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/postBtn"
+        android:textColor="@color/background" />
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="115dp"
+        android:layout_height="122dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_toStartOf="@+id/textLocation"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
